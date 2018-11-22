@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pus="http://example.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pus:fileUpload>
+         <!--Optional:-->
+         <arg0>?</arg0>
+         <!--Optional:-->
+         <arg1>?</arg1>
+         <!--Optional:-->
+         <arg2>cid:87356748295</arg2>
+      </pus:fileUpload>
+   </soapenv:Body>
+</soapenv:Envelope>
+
