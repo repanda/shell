@@ -1,0 +1,10 @@
+var interval;
+function inetrval(){
+  consol.log('##^^ setting interval to:');
+  interval = setInterval(() => run(),5000);
+}
+
+function run(){
+  consol.log('##^^ running:');
+  $('.addPdt.xitiLiveLink').click();
+}
