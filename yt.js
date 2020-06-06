@@ -1,8 +1,17 @@
 console.log('### YTD start');
 setTimeout(() => {
 
-var vID=window.location.search.replace('?v=','');
+var paragraph=window.location.search.replace('?v=','');
+
+console.log(paragraph);
+
+var regex = "^.*?(?=&)";
+vID = paragraph.match(regex);
+
+if(vID ===null ) vID = paragraph;
 console.log(vID);
+
+
 
 var height = 500;
 var width = 500;
