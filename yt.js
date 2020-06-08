@@ -1,6 +1,12 @@
 console.log('### YTD start');
 setTimeout(() => {
 
+// stop runing vid
+try{
+   document.getElementsByClassName('ytp-play-button')[0].click()
+}catch(err){
+   console.log(err);
+}
 var paragraph=window.location.search.replace('?v=','');
 
 console.log(paragraph);
@@ -32,5 +38,12 @@ tmpObj.innerHTML='<!--THIS DATA SHOULD BE REPLACED-->';
 ObjParent=Obj.parentNode; //Okey, element should be parented
 ObjParent.replaceChild(tmpObj,Obj); //here we placing our temporary data instead of our target, so we can find it then and replace it into whatever we want to replace to
 ObjParent.innerHTML=ObjParent.innerHTML.replace('<div><!--THIS DATA SHOULD BE REPLACED--></div>',str);
+
+// start runing vid
+try{
+   document.getElementsByClassName('ytp-large-play-button ytp-button')[0].click()
+}catch(err){
+   console.log(err);
+}
     console.log('### YTD dobe');
 }, 1000);
